@@ -1,0 +1,29 @@
+div#cont_producto{
+    min-height: 100vh;
+}
+div#form_registrar_producto{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+h3#sub_form{
+    justify-content: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+div#form_registrar_producto input{
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+}
+div#form_registrar_producto input[type="button"]{
+    width: 60%;
+    background-color: rgb(128, 107, 81);
+    color: white;
+}
+div#form_registrar_producto input[type="button"]:hover{
+    color: rgb(128, 107, 81);
+    background-color: white;
+}

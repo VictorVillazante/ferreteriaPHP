@@ -1,0 +1,350 @@
+
+html{
+    box-sizing: border-box;
+  }
+  *,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: white;
+
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  div.contenido-cabezera{
+    background-image: url(../../img/fondo.jpg);
+    height: 80vh;
+    width: 100vw;
+    background-position: top center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  /*
+  div.contenido-header{
+    padding-top: 40px;
+  }
+  
+  nav.redes-sociales{
+    text-align: center;
+  }
+  
+  nav.redes-sociales a{
+    color:#462727;
+    font-size: 2em;
+    margin-right: 20px;
+  }
+  nav.redes-sociales a:last-child{
+    margin-right: 0px;
+  }
+*/
+  div.informacion-evento{
+    width: 60vw;
+    height: 30vw;   
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.699);
+    color:#6d6d6d;
+  }
+  div.localizacion{
+    margin-top: 5vw;
+    width: 100%;
+  }
+  h1.nombre-sitio{
+      width: 100%;
+      font-size: 6vw;
+  }
+  p.ciudad{
+      font-size: 2vw;
+  }
+  p.slogan{
+      font-size: 4vw;
+  }
+nav{
+    width: 100%;
+}
+table#nav{
+    border:1px solid #7bbece;  
+    width: 100vw; 
+}
+td.elementos{
+    border:2px double #7bbece;
+    background-color: #7bbece;
+}
+td.elementos a{
+    display: flex;
+    width: 16vw;
+    height: 50px;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+td.elementos a:hover{
+    background-color: white;
+    color: #6d6d6d;
+}
+tr.elementos a:hover{
+    background-color: white;
+    color: #6d6d6d;
+}
+div#ofertas{
+  width: 100vw;
+  text-align: center;
+}
+img{
+  float: left;
+  width: 300px;
+  height: 400px;
+  margin-left: 20vw;
+  margin-right: 10vw;
+  border: 15px outset #7bbece;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+h1#oferta{
+  padding: 30px 0;
+  text-align: center;
+  font-size:80px;
+  font-style: italic;
+}
+div.informacion{
+  float: left;
+  width: 300px;
+  height: 400px;
+  padding-top: 80px;
+}
+a.boton{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding-top: 15px;
+  text-decoration: none;
+  background-color: #7bbece;
+  margin-top: 60px;
+  color:white;
+}
+div.oferta::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+div.oferta{
+  width: 80vw;
+  margin: 40px auto;
+  padding: 40px;
+  border: 2px dotted #7bbece;
+}
+/*Galeria producto*/
+div#galeria_contenedor{
+  overflow: hidden;
+  padding: 40px;
+  margin: 40px auto;
+  border: 4px #7bbece solid;
+  display: block;
+  width: 95vw;
+  min-height: 100vh;
+}
+div.galeria_producto{
+  width: 25%;
+  margin: 20px;
+  margin-right: 25px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+h3.galeria_producto_titulo{
+  text-decoration: underline;
+}
+img.galeria_imagen{
+  float: none;
+  margin: 0 0;
+  display: block;
+}
+/*Carrito*/
+div#carrito::before{
+  content: 'Productos elegidos para el carrito';
+  font-weight: bold;
+  font-size: 30px;
+  
+  clear: both;
+  display: block;
+
+}
+div#carrito{
+  text-align: center;
+  background-color: white;
+  color: #6d6d6d;
+  padding: 40px 20px;
+  margin: 20px 20px;
+  border: 4px double #6d6d6d;
+}
+div#carrito table{
+  border-collapse: collapse;
+  margin: 0 auto;
+
+}
+button, button.boton_carrito{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding-top: 15px;
+  text-decoration: none;
+  background-color: #7bbece;
+  margin-top: 20px;
+  color:#6d6d6d;
+}
+button:hover, button.boton_carrito:hover{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding-top: 15px;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 20px;
+  color:#7bbece;
+  font-weight: bold;
+}
+/*
+div#carrito table,
+div#carrito table tbody{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+div#carrito table tr{
+  width: 100%;
+}
+*/
+div#carrito table td,
+div#carrito table th{
+  padding: 20px 40px;
+}
+
+div#carrito table th{
+  background-color: #6d6d6d;
+  color: white;
+}
+/*Iniciar sesion*/
+div.iniciar_sesion_adm{
+  display: flex;
+  justify-content: right;
+}
+div.iniciar_sesion_adm img#icono_iniciar_sesion{
+  border:none;
+  width:100px;
+  height: 100px;
+  float:none;
+}
+
+div.iniciar_sesion_adm a{
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border:2px double #7bbece;
+  background-color: #7bbece;
+}
+/*Botones carrito*/
+
+button.buttons_carrito{
+  margin-left: 20px;
+  display: inline-block;
+  background-color: #7bbece;
+  color: #6d6d6d;
+  box-shadow: none;
+  width: 200px;
+  height: 50px;
+}
+button.buttons_carrito:hover{
+  font-weight: bold;
+  background-color: white;
+  color: #7bbece;
+}
+/*Finalizar compra*/
+div.contenido_cuerpo{
+  text-align: center;
+  width: 90vw;
+  margin: 50px auto;
+}
+div.cupon_descuento{
+  border: 2px rgb(109, 102, 102) solid;
+  box-shadow: rgb(109, 102, 102) 2px 0 10px 2px;
+  text-align: left;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+div.cupon_descuento label[for="cupon"]{
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
+  display: block;
+}
+div.cupon_descuento input[type="text"]{
+  padding: 10px 20px;
+  width: 60%;
+  margin-bottom: 10px;
+}
+div.cupon_descuento input[type="button"]{
+  background-color: #7bbece;
+  color: #6d6d6d;
+  width: 40%;
+  padding: 10px 0;
+}
+/*formulario de finalizar compra*/
+div.formulario{
+  border: 2px rgb(109, 102, 102) solid;
+  box-shadow: rgb(109, 102, 102) 2px 0 10px 2px;
+  margin-top: 60px;
+  padding: 40px;
+}
+div.formulario input{
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+div.formulario label{
+  font-weight: bold;
+  display: block;
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 20px;
+}
+div.entrega_form{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+div#resultado_pedido{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px 0;
+  border: 4px rgba(255, 255, 184, 1) solid;
+}
+div.confirma_descuento{
+  width: 80%;
+  padding: 20px 0;
+}
+/*Descuento caja carrito*/
+div#descuento_caja_carrito{
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(131, 182, 131);
+}
+div#total_descuento_caja_carrito{
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(131, 182, 131);
+
+}

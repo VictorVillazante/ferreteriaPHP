@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Code Pro', monospace;}
+div#contenedor{
+    width: 70vw;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+div#cabecera{
+    height: 30vh;
+    width: 100vw;
+    
+}
+div#cont{
+    min-height: 70vh;
+    width: 70vw;
+    padding: 30px;
+    border: 2px rgb(128, 107, 81) solid;
+   
+
+}
+div#contenedor h1{  
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(128, 107, 81);
+    border: 2px rgb(128, 107, 81) solid;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    width: 33.3%;
+}
+li a{
+    background-color: rgb(128, 107, 81);
+    color: white;
+    border: 2px white solid;
+    padding: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+/*Contenido por debajo*/
+div#contenedor_interno{
+    display: flex;
+    background-color: rgb(216, 191, 159);
+    padding: 20px;
+}
+div#contenedor_interno aside{
+    width: 30%;
+    min-height: 100vh;
+    border: 2px black solid;
+    text-align: center;
+}
+
+div#contenedor_interno aside a{
+    text-decoration: none;
+    background-color: rgb(128, 107, 81);
+    display: block;
+    padding: 20px 20px;
+}
+div#contenedor_interno article{
+    width: 70%;
+    text-align: center;
+    min-height: 100vh;
+    border: 2px black solid;
+
+}
+ul#menu_aside{
+    display: flex;
+    flex-direction: column;
+}
+ul#menu_aside a{
+    margin: 10px 5px;
+    color: white    ;
+}
+/*div#contenedor_interno article div h3{
+    display: block;
+    text-align: center;
+}
+div#cont_pedidos{
+    width: 70%;
+}*/
+/*Contenido pedidos*/
+div#cont_pedidos{
+    text-align: center;
+}
